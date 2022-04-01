@@ -36,4 +36,5 @@ yarn-error.log*
 .yarn.lock
 
 # API
+/README2.md
 /pages/api
