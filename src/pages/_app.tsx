@@ -5,10 +5,11 @@ import {Provider as NextAuthProvider} from 'next-auth/client';
 import '../styles/global.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const AnyComponent = Component as any;
   return (
     <NextAuthProvider session={pageProps.session}>
       <Header />
-      <Component {...pageProps} />
+      <AnyComponent {...pageProps} />
     </NextAuthProvider>
   )
 }

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ActiveLink } from '../ActiveLink';
 import { SignInButton } from '../SignInButton';
 
@@ -17,7 +16,7 @@ export function Header() {
             <a>Home</a>
           </ActiveLink>
           <ActiveLink activeClassName={styles.active} href="/posts" prefetch>
-            <a>Post</a>
+            <a>Posts</a>
           </ActiveLink>
         </nav>
 
